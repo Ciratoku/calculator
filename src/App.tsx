@@ -24,18 +24,23 @@ function App() {
     "0",
     ",",
   ];
+  const handleInput = (e: Event) => {
+    //
+  };
   return (
-    <div className="calc-grid">
-      <div className="output">
-        <div className="statement">123</div>
-        <div className="result">123</div>
+    <div className="wrapper">
+      <div className="calc-grid">
+        <div className="output">
+          <div className="statement">123</div>
+          <div className="result">123</div>
+        </div>
+        {buttons.map((btn) => (
+          <button key={btn}>{btn}</button>
+        ))}
+        <button style={{ color: "rgba(0, 0, 0, 0.5)", background: "white" }}>
+          =
+        </button>
       </div>
-      {buttons.map((btn) => (
-        <button key={btn}>{btn}</button>
-      ))}
-      <button style={{ color: "rgba(0, 0, 0, 0.5)", background: "white" }}>
-        =
-      </button>
     </div>
   );
 }
