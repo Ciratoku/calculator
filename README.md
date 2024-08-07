@@ -1,6 +1,6 @@
 # Запуск
 
-npm i
+npm i  
 npm run dev
 
 # Тесты
