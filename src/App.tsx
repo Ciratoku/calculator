@@ -55,11 +55,15 @@ function App() {
     return () => window.removeEventListener("keyup", handleKeyUp);
   }, [handleKeyUp]);
   return (
-    <div className="wrapper">
+    <div role="wrapper" className="wrapper">
       <div className="calc-grid">
         <div className="output">
-          <div className="statement">{statement}</div>
-          <div className="result">{result}</div>
+          <div role="statement" className="statement">
+            {statement}
+          </div>
+          <div role="result" className="result">
+            {result}
+          </div>
         </div>
         {buttons.map((btn) => (
           <button
