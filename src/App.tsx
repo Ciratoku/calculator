@@ -72,6 +72,7 @@ function App() {
           </button>
         ))}
         <button
+          key="="
           style={{ color: "#2a5698", background: "white" }}
           onClick={() => handleKeyUp(new KeyboardEvent("keyup", { key: "=" }))}
         >
