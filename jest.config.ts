@@ -5,6 +5,5 @@ const config: Config.InitialOptions = {
   transform: {
     "^.+\\.tsx?$": "ts-jest",
   },
-  transformIgnorePatterns: [".*"],
 };
 export default config;
