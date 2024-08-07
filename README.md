@@ -5,4 +5,4 @@ npm run dev
 
 # Тесты
 
-npm test
+npm run test
